@@ -1,0 +1,319 @@
+@charset "UTF-8";
+/* Text */
+/* Universal */
+/* Responsive Screens */
+/* Reset default browser styles */
+body, h1, h2, h3, p, ul, ol, li {
+  margin: 0;
+  padding: 0;
+  font-family: "Libre Franklin", "Helvetica Neue", helvetica, arial, sans-serif;
+}
+
+/* Set a default font family and size */
+body {
+  font-family: Arial, sans-serif;
+  background-color: rgb(60, 60, 60);
+  color: rgb(217, 217, 217);
+}
+
+div {
+  width: 100%;
+}
+
+/* Style for headings */
+h1 {
+  font-size: 36px;
+  margin-bottom: 20px;
+  margin-top: 10px;
+}
+
+h2 {
+  font-size: 24px;
+  margin-bottom: 15px;
+}
+
+h3 {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+/* Basic styling for paragraphs */
+p {
+  margin-block-end: 15px;
+  margin-block-start: 15px;
+}
+
+/* Style for links */
+a {
+  color: rgb(175, 175, 175);
+  text-decoration: none;
+}
+a:hover {
+  color: rgb(232, 232, 232);
+  text-decoration: underline; /* Underline links on hover */
+}
+
+/* Style for lists */
+ul, ol {
+  margin-bottom: 15px;
+}
+
+/* Style for list items */
+li {
+  margin-bottom: 5px;
+}
+
+/* Add a border to images */
+img {
+  max-width: 100%; /* Make images responsive */
+}
+
+/* Optional: Add some basic styling to the table */
+table {
+  border-collapse: collapse;
+  width: 100%;
+  background-color: rgb(53, 53, 53);
+  margin: 1.5em auto;
+  table-layout: fixed;
+  display: table;
+}
+
+th, td {
+  border: 2px solid black;
+  text-align: left;
+  padding-top: 0.5em;
+  padding-bottom: 0.5em;
+  display: table-cell;
+}
+
+tr {
+  box-shadow: 1px 2px 2px 1px rgba(0, 0, 0, 0.12), 1px 2px 2px 1px rgba(0, 0, 0, 0.24);
+}
+
+td {
+  background-color: rgb(55, 55, 55);
+  font-size: 1em;
+}
+
+th {
+  border: 0.125em solid rgb(0, 0, 0);
+  background-color: rgb(65, 65, 65);
+  font-size: 1.1em;
+  font-weight: 400;
+  box-shadow: none;
+  font-weight: bold;
+}
+
+table td:nth-of-type(1), th:nth-of-type(1) {
+  min-width: auto;
+}
+
+.centre {
+  text-align: center;
+}
+
+.page-title {
+  text-align: center;
+}
+
+.page-subtitle {
+  text-align: center;
+}
+
+.container {
+  max-width: 44em;
+  margin: 20px auto;
+  padding: 0 1.5rem;
+  letter-spacing: 0.04em;
+  line-height: 1.8em;
+}
+
+@media only screen and (max-width: 600px) {
+  body {
+    font-size: 16px;
+  }
+  .container {
+    padding: 0 10px; /* Reduce padding on smaller screens */
+  }
+  .kana-table {
+    font-size: 12px;
+    text-size-adjust: 100%;
+  }
+}
+/* Medium screens (tablets) */
+@media only screen and (min-width: 601px) {
+  body {
+    font-size: 16px;
+  }
+  .navbar-list {
+    padding-inline-start: 40px;
+  }
+}
+/* Large screens (desktops) */
+@media only screen and (min-width: 1024px) {
+  body {
+    font-size: 16px;
+  }
+}
+/* Basic styling for buttons */
+.button {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+.button:hover {
+  background-color: #0056b3; /* Darker blue on hover */
+}
+
+.navbar {
+  display: block;
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+.navbar-logo {
+  float: right;
+  margin-top: 1em;
+  margin-right: 0.4em;
+  width: auto;
+  height: 49px;
+  padding: 0;
+  display: block;
+  margin-left: auto;
+}
+
+.navbar-list {
+  font-family: "Noto Sans", "Noto Sans CJK JP", "ヒラギノ角ゴ ProN", "Hiragino Kaku Gothic ProN", "游ゴシック", "游ゴシック体", YuGothic, "Yu Gothic", "メイリオ", Meiryo, "ＭＳ ゴシック", "MS Gothic", HiraKakuProN-W3, "TakaoExゴシック", TakaoExGothic, "MotoyaLCedar", "Droid Sans Japanese", sans-serif;
+}
+
+.navbar-list-item {
+  text-align: center;
+  line-height: 2em;
+  display: inline-block;
+  margin-left: 1em;
+}
+
+.navbar-link-eng {
+  cursor: context-menu;
+  font-weight: 100;
+  font-size: 0.66em;
+}
+
+.navbar-link-jp {
+  font-weight: 100;
+  font-size: 1.8rem;
+}
+
+.bold {
+  font-weight: bolder;
+}
+
+.highlight-green {
+  color: #00ff91;
+}
+
+.highlight-orange {
+  color: #ffbb00;
+}
+
+.highlight-blue {
+  color: #00bfff;
+}
+
+.highlight-red {
+  color: #ef8080;
+}
+
+.highlight-purple {
+  color: #b280ef;
+}
+
+.fill-purple {
+  border: 3px solid #b280ef;
+}
+
+.toggle-container {
+  display: flex;
+  flex-direction: row;
+}
+
+.toggle-parent {
+  display: flex;
+  justify-content: center;
+  align-items: center; /* Center items horizontally */
+}
+
+.toggle-text {
+  position: relative;
+  display: inline-block;
+  text-align: center;
+}
+
+.switch {
+  margin-left: 5px;
+  position: relative;
+  display: inline-block;
+  width: 2.3em;
+  height: 1.2em;
+  text-align: center;
+}
+
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 80%;
+  width: 40%;
+  left: 5%;
+  bottom: 10%;
+  background-color: white;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+input:checked + .slider {
+  background-color: #2196F3;
+}
+input:focus + .slider {
+  box-shadow: 0 0 1px #2196F3;
+}
+input:checked + .slider:before {
+  -webkit-transform: translateX(120%);
+  -ms-transform: translateX(120%);
+  transform: translateX(120%);
+}
+
+/* Rounded sliders */
+.slider.round {
+  border-radius: 34px;
+}
+.slider.round:before {
+  border-radius: 50%;
+}
+
+/* Text */
+/* Universal */
+/* Responsive Screens */
+.furigana {
+  color: #ef8080;
+}
